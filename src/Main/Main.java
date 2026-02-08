@@ -4,11 +4,11 @@ import pedidoRestaurante.Pedido;
 public class Main {
     public static void main(String[] args) {
 
-        Pedido pedido = new Pedido("Juan Pérez");
+        Pedido pedido = new Pedido("Antonio Gonzalez");
 
-        pedido.agregarArticulo("Hamburguesa", 2, 1500);
-        pedido.agregarArticulo("Papas fritas", 1, 800);
-        pedido.agregarArticulo("Gaseosa", 2, 600);
+        pedido.agregarArticulo("Pizza", 2, 1500);
+        pedido.agregarArticulo("Agua", 1, 800);
+        pedido.agregarArticulo("Papas fritas", 2, 600);
 
         pedido.mostrarResumen();
 
