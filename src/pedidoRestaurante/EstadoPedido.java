@@ -1,4 +1,5 @@
 public enum EstadoPedido {
+    PEDIDO_RECIBIDO,
     EN_PREPARACION,
     LISTO_PARA_ENTREGAR,
     ENTREGADO
