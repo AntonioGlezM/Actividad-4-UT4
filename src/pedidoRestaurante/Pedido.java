@@ -1,3 +1,4 @@
+package pedidoRestaurante;
 public class Pedido {
 
     private static int contadorPedidos = 1;

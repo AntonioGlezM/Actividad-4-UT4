@@ -1,3 +1,4 @@
+package Main;
 import pedidoRestaurante.EstadoPedido;
 import pedidoRestaurante.Pedido;
 

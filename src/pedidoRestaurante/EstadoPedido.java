@@ -1,3 +1,4 @@
+package pedidoRestaurante;
 public enum EstadoPedido {
     PEDIDO_RECIBIDO,
     EN_PREPARACION,
