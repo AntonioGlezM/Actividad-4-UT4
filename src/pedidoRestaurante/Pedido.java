@@ -39,6 +39,14 @@ public class Pedido {
 
     public void cambiarEstado(EstadoPedido nuevoEstado) {
         switch (estado) {
+            case PEDIDO_RECIBIDO:
+                if (nuevoEstado == EstadoPedido.EN_PREPARACION ||nuevoEstado == EstadoPedido.LISTO_PARA_ENTREGAR || nuevoEstado == EstadoPedido.ENTREGADO) {
+                    estado = nuevoEstado;
+                } else {
+                    System.out.println("No se puede retroceder el estado del pedido.");
+                }
+                break;
+
             case EN_PREPARACION:
                 if (nuevoEstado == EstadoPedido.LISTO_PARA_ENTREGAR || nuevoEstado == EstadoPedido.ENTREGADO) {
                     estado = nuevoEstado;
