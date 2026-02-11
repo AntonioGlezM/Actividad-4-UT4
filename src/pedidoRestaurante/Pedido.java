@@ -68,5 +68,17 @@ public class Pedido {
                 break;
         }
     }
+    public void mostrarResumen() {
+            System.out.println("Pedido #" + idPedido);
+            System.out.println("Cliente: " + nombreCliente);
+            System.out.println("Artículos:");
 
+        for (int i = 0; i < cantidadArticulos; i++) {
+            Articulo a = articulos[i];
+            System.out.println("- " + a.getNombre() + " | Cantidad: " + a.getCantidad() + " | Precio unitario: $" + a.getPrecioUnitario() + " | Subtotal: $" + a.getSubtotal());
+        }
+
+            System.out.println("Estado: " + estado);
+            System.out.println("Total: $" + calcularTotal());
+    }
 }
