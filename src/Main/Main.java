@@ -7,9 +7,9 @@ public class Main {
 
         Pedido pedido = new Pedido("Antonio Gonzalez");
 
-        pedido.agregarArticulo("Pizza", 2, 1500);
-        pedido.agregarArticulo("Agua", 1, 800);
-        pedido.agregarArticulo("Papas fritas", 2, 600);
+        pedido.agregarArticulo("Pizza", 2, 10);
+        pedido.agregarArticulo("Agua", 1, 1);
+        pedido.agregarArticulo("Papas fritas", 2, 6);
 
         pedido.mostrarResumen();
 
