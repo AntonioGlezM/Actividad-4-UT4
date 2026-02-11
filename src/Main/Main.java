@@ -12,10 +12,21 @@ public class Main {
         pedido.agregarArticulo("Papas fritas", 2, 6);
 
         pedido.mostrarResumen();
+        System.out.println("--------------------------");
+
+        pedido.cambiarEstado(EstadoPedido.EN_PREPARACION);
+
+        pedido.mostrarResumen();
+        System.out.println("--------------------------");
 
         pedido.cambiarEstado(EstadoPedido.LISTO_PARA_ENTREGAR);
+
+        pedido.mostrarResumen();
+        System.out.println("--------------------------");
+
         pedido.cambiarEstado(EstadoPedido.ENTREGADO);
 
         pedido.mostrarResumen();
+        System.out.println("--------------------------");
     }
 }
