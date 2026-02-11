@@ -14,7 +14,7 @@ public class Pedido {
         this.nombreCliente = nombreCliente;
         this.articulos = new Articulo[5];
         this.cantidadArticulos = 0;
-        this.estado = EstadoPedido.EN_PREPARACION;
+        this.estado = EstadoPedido.PEDIDO_RECIBIDO;
     }
 
     public void agregarArticulo(String nombre, int cantidad, double precioUnitario) {
@@ -75,10 +75,10 @@ public class Pedido {
 
         for (int i = 0; i < cantidadArticulos; i++) {
             Articulo a = articulos[i];
-            System.out.println("- " + a.getNombre() + " | Cantidad: " + a.getCantidad() + " | Precio unitario: $" + a.getPrecioUnitario() + " | Subtotal: $" + a.getSubtotal());
+            System.out.println("- " + a.getNombre() + " | Cantidad: " + a.getCantidad() + " | Precio unitario: " + a.getPrecioUnitario() +"$ " + " | Subtotal: " + a.getSubtotal()+ "$");
         }
 
             System.out.println("Estado: " + estado);
-            System.out.println("Total: $" + calcularTotal());
+            System.out.println("Total: " + calcularTotal()+ "$");
     }
 }
